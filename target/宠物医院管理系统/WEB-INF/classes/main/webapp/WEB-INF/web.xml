@@ -1,0 +1,26 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <servlet>
+    <servlet-name>Log_in_Servlet</servlet-name>
+    <servlet-class>Log_in_Servlet</servlet-class>
+    <init-param>
+      <param-name>startPoint</param-name>
+      <param-value>2000</param-value>
+    </init-param>
+  </servlet>
+  <!--（1） declare a Servlet object声明一个Servlet对象-->
+
+  <servlet-mapping>
+    <servlet-name>Log_in_Servlet</servlet-name>
+    <url-pattern>/Log_in_Servlet</url-pattern>
+  </servlet-mapping>
+
+  <!--（2） 配置<servlet-mapping>,包括servlet 名字<servlet-name>和Servlet所在的访问路径<url-pattern>-->
+
+  <welcome-file-list>
+    <welcome-file>用户登录/用户登录.html</welcome-file>
+  </welcome-file-list>
+</web-app>

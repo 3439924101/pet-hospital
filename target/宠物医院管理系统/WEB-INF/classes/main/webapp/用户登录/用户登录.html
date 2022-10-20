@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+</head>
+<body>
+<div align="center">请输入登录信息
+    <form name="form1" method="post" action="Log_in_Servlet">
+        <table>
+            <tr>
+                <td>用户：</td>
+                <td><input type="text" name="user" style="width:200px" /></td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td><input type="password" name="password" style="width:200px"/></td>
+            </tr>
+            <!-- 以下是提交、取消按钮 -->
+            <tr>
+                <td>
+                    <input type="submit" value="登录" />
+                </td>
+                <td>
+                    <input type="reset" value="取消" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
